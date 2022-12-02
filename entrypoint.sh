@@ -24,7 +24,7 @@ do
                 ;;
                 
             brotli)
-                `find $1 -maxdepth $depth -type f -name "*$FILE_EXT" -exec brotli -f {} \;`
+                `find $1 -maxdepth $depth -type f -name "*$FILE_EXT" -exec brotli -f -11 {} \;`
                 ;;
                 
             *)
