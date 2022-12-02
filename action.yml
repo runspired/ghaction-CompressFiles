@@ -27,7 +27,7 @@ inputs:
     default: 'false'
 runs:
   using: 'docker'
-  image: 'docker://sheyenrath/ghaction-compress-files:2'
+  image: 'docker://runspired/ghaction-compress-files:2'
   args:
     - ${{ inputs.path }}
     - ${{ inputs.extensions }}
